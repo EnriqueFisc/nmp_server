@@ -1,0 +1,16 @@
+{
+  "name": "nmp_server",
+  "version": "1.0.0",
+  "description": "Server to nmp app",
+  "main": "index.js",
+  "author": "Jorge Fischer",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  }
+}
