@@ -26,10 +26,9 @@ jobs:
       #     cache: "npm"
 
       - name: install nodejs
-        run: |
-        curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
-        node --version
-        npm --version
+        run: curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+        run: node --version
+        run: npm --version
       - run: npm i
       #- run: yarn run build --if-present
       - run: npm run start
