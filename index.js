@@ -1,15 +1,34 @@
-const express = require('express');
-const app = express();
+require('./src/database/index');
+const express   = require('express');
+const cors      = require('cors');
+const app       = express();
+
+const {
+    json, 
+    urlencoded,
+} = express;
 
 
+// MICROSERVICE CONFIG
+const port = process.env.PORT || '4000';
+app.use( cors({
+    origin: '*'
+}));
+
+app.use( json() );
+
+app.use(urlencoded({ extended: false}));
+
+//IMPORTING ROUTES
+app.use( require('./src/routes/index') );
 
 
 app.get('/', (req, res, next) => {
     res.json({
-        data: 'Hello world'
+        data: 'Nacional Monte de Piedad API.'
     })
 })
 
-app.listen('4000', () => {
-    console.log('Server is started')
+app.listen( port, () => {
+    console.log(`Server is started on port: ${port}`);
 })
