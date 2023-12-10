@@ -26,7 +26,7 @@ jobs:
       #     cache: "npm"
 
       - name: install nodejs
-        run: apt-get install -y nodejs
+        run: curl -fsSL https://github.com/actions/node-versions/releases/download/18.19.0-7042590257/node-18.19.0-linux-x64.tar.gz
         # run: node --version
         # run: npm --version
       - run: npm i
