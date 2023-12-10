@@ -14,7 +14,7 @@ jobs:
     # strategy:
     #   matrix:
     #     node-version: [19.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       # - uses: actions/checkout@v3
@@ -27,8 +27,8 @@ jobs:
 
       - name: install nodejs
         run: curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
-        run: node --version
-        run: npm --version
+        # run: node --version
+        # run: npm --version
       - run: npm i
       #- run: yarn run build --if-present
       - run: npm run start
