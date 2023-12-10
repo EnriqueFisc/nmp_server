@@ -25,7 +25,7 @@ app.use( require('./src/routes/index') );
 
 app.get('/', (req, res, next) => {
     res.json({
-        data: 'Nacional Monte de Piedad API.'
+        data: 'Nacional Monte de Piedad API on server.'
     })
 })
 
