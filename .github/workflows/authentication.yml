@@ -25,4 +25,4 @@ jobs:
           cache: "npm"
       - run: npm i
       #- run: yarn run build --if-present
-      - run: npm run start
+      # - run: npm run start
