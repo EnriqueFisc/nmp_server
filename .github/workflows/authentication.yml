@@ -26,7 +26,7 @@ jobs:
       #     cache: "npm"
 
       - name: install nodejs
-        run: curl -fsSL https://deb.nodesource.com/setup_19.x | sudo -E bash -
+        run: apt-get install -y nodejs
         # run: node --version
         # run: npm --version
       - run: npm i
