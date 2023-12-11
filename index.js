@@ -22,6 +22,9 @@ app.use(urlencoded({ extended: false}));
 //IMPORTING ROUTES
 app.use( require('./src/routes/index') );
 
+// DOCUMENTATION ROUTE
+app.use( require('./src/apiDoc/swagger') )
+
 
 app.get('/', (req, res, next) => {
     res.json({
