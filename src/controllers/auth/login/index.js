@@ -47,34 +47,6 @@ const userLogin = async(req = express.request, res, next ) => {
     }
 
 
-    // UserCollection.findOne({ email: email }, async( err, user ) => {
-    //     if(err) {
-            
-    //     }
-
-    //     if( !user ) {
-    //         return res.status(404)
-    //         .json({
-    //             ok: false,
-    //             msg: "Incorrect email or password"
-    //         });
-    //     }
-
-    //     if (!passwordEncrypter.compareSync(password, user.password)) {
-    //         return res.status(400).json({
-    //             ok: false,
-    //             msg: 'Incorrect email or password'
-    //         });
-    //     }
-
-        
-    //     try {
-            
-    //     } catch (error) {
-            
-    //     }
-
-    // })
 
 }
 
