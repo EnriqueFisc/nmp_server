@@ -1,4 +1,4 @@
-const app = require('../index');
+const app = require('../app');
 const request = require('supertest');
 
 
@@ -11,7 +11,7 @@ describe('Testing on Authentication Service', () => {
                 .send({
                     "name": "Jorge",
                     "lastname": "Fischer",
-                    "email": "jorge1@mail.com",
+                    "email": "jorge5@mail.com",
                     "password":"test"
                 })
                 .expect(200)
